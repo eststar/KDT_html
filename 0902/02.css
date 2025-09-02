@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color:lightblue;
+}
+
+header, main, footer {
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    /* text-align: center; */
+}
+
+article {
+    width: 80%;
+    padding: 20px;
+    background-color: lightcoral;
+}
+
+section {
+    width: 30%;
+}
+/* h1, h2 {
+    color:blue;
+    background-color: lightyellow;
+}
+
+p {
+    color: darkgreen;
+}
+
+.s1 {
+    background-color:rgb(233, 132, 132);
+}
+
+#a1 {
+    background-color:lightgreen;
+}
+
+article > p {
+    color:purple;
+}
+
+footer {
+    background-color:black;
+}
+
+footer li {
+    color: white;
+} */
