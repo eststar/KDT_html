@@ -3,6 +3,7 @@ html{
 }
 
 body {
+    width:512px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -28,7 +29,8 @@ h1, h2 {
 
 header, main, footer{
     
-    width: 95%;
+    width: 500px;
+    margin-top: 5px;
 
     display: flex;
     flex-direction: column;
@@ -36,20 +38,23 @@ header, main, footer{
     align-items: center;
 }
 
+/* header 영역 */
 header ul{
+    /* height: 50px; */
 
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-
-    /* width:100%;   */
+    flex-wrap: wrap;
 }
 
 header a{
     width:100px;
+    height:30px;
     padding:5px;
-    margin:5px;
+    margin-left:5px;
+    margin-right:5px;
     background-color: blue;
     border-radius: 5px;
     color: white;
@@ -58,16 +63,17 @@ header a{
 }
 
 .icon > a {
-    padding: 0;
+
     background-color: lightblue;
 
     color : black;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
+/* main 영역 */
 main img {
-    width: 15%;
-    height: 15%;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
 }
 
@@ -92,6 +98,8 @@ section p{
     margin-right: 20px;
 }
 
+
+/* footer 영역 */
 footer {
     /* padding: 20px; */
 
@@ -110,6 +118,9 @@ footer > ul{
     margin-right: 10%;
 }
 
-/* @media (min-width:1024px){
-
-} */
+/* 반응형 */
+@media (min-width:1024px){
+    body{
+        width:1024px;
+    }
+}

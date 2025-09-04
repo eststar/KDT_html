@@ -1,0 +1,31 @@
+main {
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    margin: 5px 15px;
+
+    background-color: rgb(72, 72, 235);
+    
+    border-radius: 5px;
+    border: 0;
+
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+.btDiv {
+    display: flex;
+    flex-direction: row;
+}

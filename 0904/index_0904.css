@@ -1,0 +1,89 @@
+body {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    background-color: rgb(240, 224, 205);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, main, footer {
+    width: 800px;
+    background-color: rgb(165, 151, 204);
+
+    margin: 10px;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 grey;
+}
+
+/* Header */
+header {
+    background-color: blue;
+    margin: 25px;
+
+    color:aliceblue;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+header span{
+    color:aquamarine;
+}
+
+/* Main */
+/* main{
+    height: 500px;
+} */
+
+main li {
+    border-bottom: 2px solid red;
+
+    padding: 10px;
+    margin-top: 10px;
+}
+
+main li:hover{
+    background-color: yellow;
+}
+
+/* footer */
+footer {
+    padding: 0px 20px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: end;
+}
+
+footer li {
+    margin: 5px 10px; /* T-B R-L 또는 T R B L */
+}
+
+footer a{
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+footer a:hover{
+    background-color: brown;
+}
