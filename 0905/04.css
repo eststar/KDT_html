@@ -1,13 +1,16 @@
-main {
-    height: 500px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.inputDiv {
+    margin-bottom: 40px;
 }
 
-button {
+input[type=text] {
+    padding:10px;
+}
+
+input[readonly]{
+    background-color: orange;
+}
+
+button, input[type=button], input[type=reset]{
     padding: 10px;
     margin: 5px 15px;
 
@@ -20,18 +23,12 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+button:hover, input[type=button]:hover, input[type=reset]:hover {
     background-color: brown;
     cursor: pointer;
 }
 
-.btDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#msg {
+/* #msg {
     width:80%;
     height:100px;
     margin-top:20px;
@@ -47,4 +44,4 @@ button:hover {
 
 #msg span{
     color:red;
-}
+} */
