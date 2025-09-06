@@ -15,5 +15,12 @@ ul {
 }
 
 header, main, footer {
-    width:200px;
+    width:512px;
+
+    margin:20px;
+
+    background-color: white;
+
+    text-align: center;
 }
+

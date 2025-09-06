@@ -20,7 +20,7 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+button:hover, input[type=button] {
     background-color: brown;
     cursor: pointer;
 }
