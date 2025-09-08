@@ -1,0 +1,54 @@
+#spDiv {
+
+    margin-bottom: 40px;
+
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spDiv > span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin:5px;
+
+    /* background-color: green; */
+
+    border-radius: 50%;
+    /* border: 2px solid black; */
+
+    font-weight: bold;
+    color: white;
+}
+
+.sp0 {
+    background-color: rgb(182, 90, 57);
+}
+
+.sp1 {
+    background-color: rgb(84, 168, 0);
+}
+.sp2 {
+    background-color: rgb(218, 77, 119);
+}
+.sp3 {
+    background-color: rgb(0, 201, 201);
+}
+.sp4 {
+    background-color: darkblue;
+}
+
+#spDiv > .spplus {
+    /* background-color: rgb(187, 159, 1); */
+    color:black;
+}
+
+#btDiv span{
+    background-color: black;
+}
