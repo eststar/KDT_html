@@ -1,44 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    // let diceDivTags = [];
-    // diceDivTags.push("<h2>주사위 게임</h2>");
-    // diceDivTags.push(`<img src="../img/1.png">`);
-    // diceDivTags.push(`<img src="../img/1.png">`);
-
-    // const diceDiv = document.querySelector('#diceDiv');
-    // diceDiv.innerHTML = diceDivTags.join('');
-
-    // const diceTitle = document.querySelector("#diceDiv > h2");
-
-
-    // let btDivTags = [];
-
-    // for(let i = 0; i < 6; i++){
-    //     btDivTags.push(`<button>${i+1}선택</button>`);
-    // }
-
-    // console.log(btDivTags);
-    // document.querySelector("#btDiv").innerHTML = btDivTags.join('');
-
+   
+    //주사위 노드 선택
     const diceCom = document.querySelector('#com');
     const diceUser = document.querySelector('#user');
 
+    //버튼들의 노드 선택
+    //배열로 반환 받음
+    //배열이 아니라 NodeList
     const buttons = document.querySelectorAll('#btDiv > button');
-    const msgArea = document.querySelector("#msgDiv");
+    //메세지 노드 선택
+    const msgArea = document.querySelector("#msg");
 
+    //버튼 노드들 NodeList 순회하면서 클릭 이벤트 발생하는지 확인
     for (let bt of buttons) {
         bt.addEventListener("click", () => {
-            let buttonName = bt.innerText;
-            console.log(buttonName);
-            let userNum = 0;
-            for (let item of buttonName) {
-                if (!isNaN(item)) {
-                    userNum = item;
-                    break;
-                }
-            }
-            let comNum = Math.floor(Math.random() * 6 + 1);
+            const buttonName = parseInt(bt.innerText.charAt(0));
+            // const buttonName = parseInt(bt.innerHTML.charAt(0));
+            // const buttonName = bt.innerText;
+            const comNum = Math.floor(Math.random() * 6 + 1);
 
+            let userNum = buttonName;
+            // for (let item of buttonName) {
+            //     if (!isNaN(item)) {
+            //         userNum = item;
+            //         break;
+            //     }
+            // }
+            
             diceUser.setAttribute("src", `../img/${userNum}.png`);
             diceCom.setAttribute("src", `../img/${comNum}.png`);
 

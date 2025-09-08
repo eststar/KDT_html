@@ -43,6 +43,8 @@ button:hover, input[type=button] {
 
     font-size: large;
     font-weight: bold;
+
+    background-color: goldenrod;
 }
 
 #msg span{

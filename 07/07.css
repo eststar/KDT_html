@@ -1,7 +1,19 @@
-#diceDiv > img{
+#diceDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#diceDiv h2 {
+    text-align: center;
+}
+
+#diceDiv img{
     margin: 0 10px;
 }
 
 #diceDiv button{
     margin: 5px 10px;
 }
+
