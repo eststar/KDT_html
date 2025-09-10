@@ -1,0 +1,27 @@
+form{
+    display:flex;
+    flex-direction: column;
+
+    width:80%;
+    padding:20px;
+    border: 1px solid black;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width:100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.selDiv select {
+    width:45%;
+    height:40px;
+    
+    margin: 10px;
+    padding:5px;
+    font-size: 20px;
+}
