@@ -25,3 +25,19 @@ form > div {
     padding:5px;
     font-size: 20px;
 }
+
+.inDiv > div {
+    width: 45%;
+    height: 40px;
+
+    margin:5px;
+    padding: 5px;
+}
+
+.inDiv input {
+    height: 40px;
+}
+
+input[readonly] {
+    background-color: rgb(241, 141, 105);
+}
