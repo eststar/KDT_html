@@ -4,7 +4,8 @@ form{
 
     width:80%;
     padding:20px;
-    border: 1px solid black;
+    border: 2px solid darkred;
+    
 }
 
 form > div {
@@ -17,7 +18,7 @@ form > div {
     font-size: 20px;
     font-weight: bold;
 }
-.selDiv select {
+.selDiv select, .inDiv > div {
     width:45%;
     height:40px;
     
@@ -26,15 +27,18 @@ form > div {
     font-size: 20px;
 }
 
-.inDiv > div {
-    width: 45%;
-    height: 40px;
-
-    margin:5px;
+.inDiv input {
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: 5px;
     padding: 5px;
+    height: 40px;
 }
 
-.inDiv input {
+.inDiv label {
+    width:10%;
+    box-sizing: border-box;
+    /* padding: 5px; */
     height: 40px;
 }
 

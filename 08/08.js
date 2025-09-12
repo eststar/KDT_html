@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const sel1 = document.querySelector("#sel1");
     const sel2 = document.querySelector("#sel2");
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const calcTemp = () => {
         if (inTXT1.value === '') {
-
             inTXT2.value = '';
             return;
         }
@@ -34,11 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     sel1.addEventListener("change", () => {
-        selVal = sel1.value;
+        // inLabel1.innerText = sel1.value;
+        // inLabel2.innerText = sel1.value;
+        
+        // selVal = sel1.value;
 
         const options = sel2.querySelectorAll("option");
         for (let el of options) {
-            if (el.value === selVal)
+            if (el.value === sel1.value)
                 el.removeAttribute("selected");
             else {
                 el.toggleAttribute("selected", true);
