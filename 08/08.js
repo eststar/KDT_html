@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const inLabel2 = document.querySelector(`[for=txt2]`);
 
     //섭씨화씨 
-    //.value 방식으로 tag 속성값 바로 접근
+    //.value 방식으로 input 요소에 입력한 값 가져옴
     //select의 콘텐츠로 포함되어 있는 option 중 selected 속성이 지정된 요소의 value 속성 바로 사용가능
     const celc = sel1.value;
     const fahren = sel2.value;

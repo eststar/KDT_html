@@ -5,6 +5,7 @@ const lotto = () => {
     //1. 숫자 7개 중복되지 않게 랜덤으로 생성
 
     while (nums.length < 7) {
+        //0~1 사이의 랜덤 숫자 생성
         let n = Math.floor(Math.random() * 45) + 1;
         //기존 숫자 배열에 있는지 확인
         if(!nums.includes(n))
