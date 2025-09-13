@@ -20,7 +20,7 @@
             <div class="selDiv">
                 <select id="sel1"><!-- form의  sell tag는 id나 name 속성 필요 -->
                     <!-- select 안의 option tag 이용해서 value속성 및 콘텐츠 내용 작성 가능 -->
-                    <option value="℃" selected>섭씨온도(℃)</option>
+                    <option value="℃" selected><span></span>섭씨온도(℃)</option>
                     <option value="℉">화씨온도(℉)</option>
                 </select>
                 <select id="sel2">
@@ -31,7 +31,8 @@
             <div class="inDiv">
                 <div>
                     <input type="number" id="txt1">
-                    <label for="txt1">℃</label> <!-- label tag는  표시할 tag의 id를 for속성으로 정해야함 -->
+                    <label for="txt1">℃</label> 
+                    <!-- label tag는  표시할 tag의 id를 for속성으로 정해야함 -->
                 </div>
                 <div>
                     <input type="number" id="txt2" readonly>
