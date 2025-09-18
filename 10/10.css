@@ -1,0 +1,44 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.mainImg {
+    height: 75%;
+}
+
+.btImg {
+    height: 25%;
+}
+
+.mainImg img{
+    height: 100%;
+}
+
+/* .btImg > button {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    margin: 5px 10px;
+    box-sizing:border-box;
+    background-color: rgb(165, 151, 204);
+        
+    border: 0;
+} */
+
+.btImg > img:hover{
+    border: 5px solid brown;
+}
+
+.btImg > img {
+    box-sizing:border-box;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: 5px solid rgb(165, 151, 204);
+}
